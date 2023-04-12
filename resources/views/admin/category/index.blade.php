@@ -34,20 +34,20 @@
                                             <td> {{ $row->id }} </td>
                                             <td> {{ $row->name }} </td>
                                             
-                                            <td> <img src="{{ asset('upload/category').'/' . $row->image }}" alt="">
+                                            <td class="image-show-category"> <img src="{{ asset('upload/category').'/' . $row->image }}" alt="">
                                             </td>
                                             <td> {{ $row->status }} </td>
                                             <td> {{ $row->popular }}</td>
 
                                             <td>
 
-                                                <button type="button" class="btn btn-dark btn-icon-text"> Edit <i
-                                                        class="mdi mdi-table-edit btn-icon-append"></i>
-                                                </button>
+                                                <a href="{{url('edit-category/'.$row->id)}}" class="btn btn-dark btn-icon-text"> Edit <i
+                                                        class="mdi mdi-table-edit btn-icon-append icon-top-3px"></i>
+                                                </a>
 
-                                                <button type="button" class="btn btn-dark btn-icon-text"> Delete <i
-                                                        class="mdi mdi-delete btn-icon-append"></i>
-                                                </button>
+                                                <a href="{{url('delete-category/'.$row->id)}}" class="btn btn-dark btn-icon-text"> Delete <i
+                                                        class="mdi mdi-delete btn-icon-append icon-top-3px"></i>
+                                                </a>
 
                                             </td>
                                         </tr>

@@ -223,7 +223,7 @@
             <div class="navbar-profile">
               <img
                 class="img-xs rounded-circle"
-                src="{{ Auth::user()->image }}"
+                src="{{asset('backend/assets/images/faces-clipart/pic-8.png') }}"
                 alt=""
               />
               <p class="mb-0 d-none d-sm-block navbar-profile-name">

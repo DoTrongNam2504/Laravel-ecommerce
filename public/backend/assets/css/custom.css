@@ -1,0 +1,37 @@
+td.image-show-category img {
+    width: 80px;
+    height: 80px;
+    border-radius: 0;
+    margin-right: 0px;
+}
+
+td.image-show-category {
+    text-align: center;
+}
+.icon-top-3px {
+    position: relative;
+    top: 3px;
+}
+.fix-image-update
+{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px
+
+}
+.fix-choose-file-update
+{
+    display: block;
+    width: 100% !important;
+}
+.form-group label
+{
+    line-height: 1.4;
+}
+textarea
+{
+    line-height: 1.5 !important;
+}

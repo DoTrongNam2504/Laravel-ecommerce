@@ -16,7 +16,7 @@
             <div class="count-indicator">
               <img
                 class="img-xs rounded-circle"
-                src="{{ Auth::user()->image }}"
+                src="{{asset('backend/assets/images/faces-clipart/pic-8.png') }}"
                 alt=""
               />
               <span class="count bg-success"></span>
@@ -94,6 +94,16 @@
         </a>
       </li>
 
+      <li class="nav-item menu-items">
+        <a class="nav-link" href="{{ url('products')}}">
+          <span class="menu-icon">
+            <i class="mdi mdi-playlist-play"></i>
+          </span>
+          <span class="menu-title">Product</span>
+        </a>
+      </li>
+
+      
 
       <li class="nav-item menu-items">
         <a

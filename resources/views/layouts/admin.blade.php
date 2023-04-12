@@ -9,6 +9,9 @@
     />
     <title>  {{ Config("app.name", "Laravel"); }}</title>
     <!-- plugins:css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href=" {{asset('backend/assets/vendors/mdi/css/materialdesignicons.min.css')}}"
@@ -39,6 +42,10 @@
     <link rel="stylesheet" href=" {{asset('backend/assets/css/style.css')}}" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href=" {{asset('backend/assets/images/favicon.png')}}" />
+
+    <!-- ------custom--css----------- -->
+    <link rel="stylesheet" href=" {{asset('backend/assets/css/custom.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.8/sweetalert2.min.css" />
   </head>
   <body>
     <div class="container-scroller">
@@ -64,6 +71,15 @@
     <!-- plugins:js -->
     <script src=" {{asset('backend/assets/vendors/js/vendor.bundle.base.js')}}"></script>
     <!-- endinject -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    @if (session('status'))
+    <script>
+        swal("{{session('status')}}");
+    </script>
+      
+      
+    @endif
     <!-- Plugin js for this page -->
     <script src=" {{asset('backend/assets/vendors/chart.js/Chart.min.js')}}"></script>
     <script src=" {{asset('backend/assets/vendors/progressbar.js/progressbar.min.js')}}"></script>
